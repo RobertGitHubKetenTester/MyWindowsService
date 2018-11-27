@@ -58,7 +58,7 @@ namespace MyWindowsService
                 {
                     var config = new ClientConfiguration
                     {
-                        Servers = new List<Uri> { new Uri("http://10.0.0.4:8091") }
+                        Servers = new List<Uri> { new Uri("http://127.0.0.1:8080") }
                     };
 
                     ClusterHelper.Initialize(config);
@@ -91,7 +91,7 @@ namespace MyWindowsService
             {
                 lines.AddRange(
                 new[] {
-                        "Excpetion:",
+                        "Exception:",
                         ex.Message,
                         ex.StackTrace
                 });
